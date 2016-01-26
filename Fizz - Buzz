@@ -1,0 +1,26 @@
+var buzzNum = []
+var fizzNum = []
+
+for (var number = 0; number <= 100; number++)
+{
+  if(number % 3 === 0)
+  {
+   console.log("Buzz"); 
+   buzzNum.push("Buzz");
+  }
+  else if(number % 5 === 0)
+  { 
+    console.log("Fizz");
+    fizzNum.push("Fizz");
+  }
+  else
+  {
+    console.log(number)
+  }
+}
+
+console.log("There are " + buzzNum.length + " divisible by 3")
+console.log("There are " + fizzNum.length + " divisible by 5")
+      
+
+
