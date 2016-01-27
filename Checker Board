@@ -1,0 +1,31 @@
+//Creates a checker board of spaces and #'s with parameters specified by the run function. 
+
+var line = [];
+
+var run = function(w, h)
+{
+	for (i = 0; i < w; i++){
+      if(i % 2 === 0){
+        line.push("#");
+      } else {
+        line.push(" ");
+      }
+    }
+  
+  	var stringEven = line.join('');
+    var oddSplice = line.splice(1, h);
+    var stringOdd = oddSplice.join('');
+  
+    for (count = 0; count < h; count++)
+    {
+      if (count % 2 === 0)
+      {
+         console.log(stringEven); 
+      }
+      else
+      {
+         console.log(stringOdd);
+      }
+    }
+}
+run(20, 20)
